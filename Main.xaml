@@ -1,61 +1,293 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}"
-xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
-xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
-xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
-xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <TextExpression.NamespacesForImplementation>
-        <sco:Collection x:TypeArguments="x:String">
-            <x:String>System.Activities</x:String>
-            <x:String>System.Activities.Statements</x:String>
-            <x:String>System.Activities.Expressions</x:String>
-            <x:String>System.Activities.Validation</x:String>
-            <x:String>System.Activities.XamlIntegration</x:String>
-            <x:String>Microsoft.VisualBasic</x:String>
-            <x:String>Microsoft.VisualBasic.Activities</x:String>
-            <x:String>System</x:String>
-            <x:String>System.Collections</x:String>
-            <x:String>System.Collections.Generic</x:String>
-            <x:String>System.Collections.ObjectModel</x:String>
-            <x:String>System.Data</x:String>
-            <x:String>System.Diagnostics</x:String>
-            <x:String>System.Drawing</x:String>
-            <x:String>System.IO</x:String>
-            <x:String>System.Linq</x:String>
-            <x:String>System.Net.Mail</x:String>
-            <x:String>System.Xml</x:String>
-            <x:String>System.Xml.Linq</x:String>
-            <x:String>UiPath.Core</x:String>
-            <x:String>UiPath.Core.Activities</x:String>
-            <x:String>System.Windows.Markup</x:String>
-        </sco:Collection>
-    </TextExpression.NamespacesForImplementation>
-    <TextExpression.ReferencesForImplementation>
-        <sco:Collection x:TypeArguments="AssemblyReference">
-            <AssemblyReference>System.Activities</AssemblyReference>
-            <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-            <AssemblyReference>System.Private.CoreLib</AssemblyReference>
-            <AssemblyReference>mscorlib</AssemblyReference>
-            <AssemblyReference>System.Data</AssemblyReference>
-            <AssemblyReference>System</AssemblyReference>
-            <AssemblyReference>System.Linq</AssemblyReference>
-            <AssemblyReference>System.Data.Common</AssemblyReference>
-            <AssemblyReference>System.Drawing</AssemblyReference>
-            <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
-            <AssemblyReference>System.Drawing.Common</AssemblyReference>
-            <AssemblyReference>System.Core</AssemblyReference>
-            <AssemblyReference>System.Xml</AssemblyReference>
-            <AssemblyReference>System.Xml.Linq</AssemblyReference>
-            <AssemblyReference>PresentationFramework</AssemblyReference>
-            <AssemblyReference>WindowsBase</AssemblyReference>
-            <AssemblyReference>PresentationCore</AssemblyReference>
-            <AssemblyReference>System.Xaml</AssemblyReference>
-            <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-            <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-            <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-        </sco:Collection>
-    </TextExpression.ReferencesForImplementation>
-    <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1"/>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1146,2264" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1112,2039" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Interaction" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Home | Salesforce" sap:VirtualizedContainerService.HintSize="1050,1928" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="7f6c6a2c-30bd-4d07-affb-7bc205c198de" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1671" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Leads'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7f6c6a2c-30bd-4d07-affb-7bc205c198de" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/page/home" DesignTimeRectangle="211, 253, 33, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Leads'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl aaname='Leads' class='slds-truncate' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl aaname='Leads' class='slds-truncate' tag='SPAN' type='' check:innerText='Leads' /&gt;" Guid="6fa65fd1-c0a2-4886-8a3d-328e77489313" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAYCAYAAAB9ejRwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEJSURBVEhL7ZPBDYMwDEU7BvMwBRswAQtwZwnOLMIMzMCVq6sX1dXHApH2UCE1T4qA2HFeSPKwG1KkcilSuRSpXH4mtW2b9X1vy7K8es55S30y6Bv+Q2pdV2uaxqqqsrqudznTNKV+GjnkOhobx3FXnye1jsZdStHfdZ3N85y+ibdtm4oQYzKeMAxDakA+4zyGoC+IsdSIczmXUrH4WR6QixQ5uhDQcUdxJUvKt0CbF4xxl4q1Yp8eiSiXJeVbEiGmf9Fz+Y5/4mzLjvovpXxFcTXAOVFh3v2bmArrmVKOFrCTIqhb4beCQn5TaD5ZHKNSwLvH9Pbp1tEQVt5Sd6JI5VKkcilSeZg9AS7GC7jibgQAAAAAAElFTkSuQmCC" InformativeScreenshot="7f178bee25eea029e1a5d3feef35c3c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="256, 258, 14, 14" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/oneAppNavContainer:appnav/auraIf/oneAppnav:oneAppNav' tag='ONE-APPNAV' /&gt;&lt;webctrl tag='svg' type='' class='slds-icon slds-icon-text-default slds-icon_xx-small' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVDhP7ZExCoQwEEX30GJEQ/AIFh7MRouACGIlCR7hL38zsojGbLGlDwKZz+QxTF74E48ozUE0zzP6vpcqzrIs8N5LFTiImqZBlmXouk6SM5RordG2rSSBg2hdVxhjkOc5hmGQ9AsnrqoKdV3DOSdp4LQjytiolIK1VlJgmiaUZXkpIZfLZiMfFEWBcRw/Et5jEnIpIruMO+O5k5CoiOyylITcigi/eds2qeIkRb/yiFIAb8184oZrnEqoAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'EMEA SMB for Robot'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="7f6c6a2c-30bd-4d07-affb-7bc205c198de" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Correct dashboard is shown&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NSelectItem DisplayName="Select Item 'EMEA SMB for Robot'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="EMEA SMB for Robot (pinned list)" ScopeIdentifier="7f6c6a2c-30bd-4d07-affb-7bc205c198de" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="23">
+                        <x:String>EMEA SMB</x:String>
+                        <x:String xml:space="preserve">EMEA SMB for Robot
+                             (Pinned list)</x:String>
+                        <x:String>Recently Viewed</x:String>
+                        <x:String>(Pilot) Anthony</x:String>
+                        <x:String>(Temporary) Bucket Queue</x:String>
+                        <x:String>****Bucket Queue AMER</x:String>
+                        <x:String>**AMER Event - ABBYY Content IQ Event</x:String>
+                        <x:String>**AMER Event - Forward III</x:String>
+                        <x:String>**AMER Event - Oracle Open World - 2019</x:String>
+                        <x:String>*All "NEW" Leads</x:String>
+                        <x:String>*All "NEW" Leads - All SDR/EDR Members</x:String>
+                        <x:String>*All "NEW" Leads - JPark</x:String>
+                        <x:String>*SDR "NEW" Leads</x:String>
+                        <x:String>00. US SDR All Leads &gt; 01/01/2018</x:String>
+                        <x:String>03. SDR All Website Leads &gt; 01/01/2018</x:String>
+                        <x:String>03. SDR All Website Leads &gt; Q3</x:String>
+                        <x:String>2019 Gartner MQ Downloads - All Master</x:String>
+                        <x:String>AC Sapphire 19 - All Conf Leads</x:String>
+                        <x:String>Academic Alliance</x:String>
+                        <x:String>Academic Alliance AMER</x:String>
+                        <x:String>Academic Alliance EMEA</x:String>
+                        <x:String>Academic Alliance India &amp; APAC</x:String>
+                        <x:String>Academic Alliance Japan</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/o/Lead/list?filterName=00B5b00000503x1EAA" DesignTimeRectangle="81, 326, 184, 23" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'EMEA SMB for Robot'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' type='' class='triggerLinkText selectedListView slds-page-header__title slds-truncate slds-p-right--xx-small uiOutputText' aaname='EMEA SMB for Robot' check:innerText='EMEA SMB for Robot' /&gt;" Guid="1f216bf8-3004-4286-8dfa-854a1bab4546" InformativeScreenshot="2a4c518c7f5e44aed4fb599f20c406ff.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMEA SMB for Robot | Leads | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="269, 336, 12, 7" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/forceIcon/auraIf/lightningIcon' tag='LIGHTNING-ICON' /&gt;&lt;webctrl tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/forceIcon/auraIf/lightningIcon' tag='LIGHTNING-ICON' /&gt;&lt;webctrl tag='path' type='' class='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACiSURBVChTY/j8+fN/SjD1DCgqLPzv5OhIFM7Py8M0YMmSJf852NmJwitXrsQ0AISrKiuxakDGdXV1cPUgjGLAp0+f/vv7+WHVCMKBAQEomkEYIxBfvXr1X09XF0Ozgb4+WA5dPYYBIHz9+vX/0lJScM0gNkgMm1qsBoDwwYMH//Nwc4PxgQMHsKoBYZwGgPDcuXP/z549G6scDOM1gDD+/B8ATlweOypuwzQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/o/Lead/list?filterName=00B5b00000503x1EAA" DesignTimeRectangle="81, 326, 184, 23" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'EMEA SMB for Robot'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewPicker:listViewPicker/uiOutputText:triggerLinkText/auraHtml:span' tag='SPAN' type='' class='triggerLinkText selectedListView slds-page-header__title slds-truncate slds-p-right--xx-small uiOutputText' aaname='EMEA SMB for Robot' check:innerText='EMEA SMB for Robot' /&gt;" Guid="74f88cb1-1871-4a52-a789-f71221dc578e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALwAAAAbCAYAAADGUOX9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASQSURBVHhe7ZtLbtswEIa7S4/gYzl7H0dLX6FFnY0P0ANoYSDtopu2QIGihoE+kSZN4scBWMqSyH/IGZKyZbSxuPgWkcjhzPCjrKTus91up2pWaj4ZqdEImapFdW81VxO8PpmrFTNnOp2q0XTRxNupxdTem8wXeuxEzVfVvYWaNtfreyszJ5M5JSB8JnP+ZOEzg2C73an1JgufGQCt7Df3myx85vzZaOFvH7bq8891Fj5z/lRP9++3G3W9vM/C/9eUhXp+cdEwVldLZsxTAOq4nC35MSfkfr1VX36t1esPd1T45WwMDXYoymZcqQrnXlHaGJbwuLKg9xCpKXROdwGkNU1ey5m6JPeENYLj/LoRvlc+/l6cXvjg/o9nasnMSeIfC//ncas+/XhU83e/+xHe3gPI06nmOOH9ddOblyihJzK/RljG8FoV8byX6mrcji9UyY7pn+D+7zkwlxMLX+ctPxDutPAfvz2qV29vZOHlJ5Hd0MtxO95vRCu0HSMJn/jkYg5Q6lOHHC7ncFY1+8KPdd7NeG8NK6OtTRAe52L+0byFGCeG3388fAcKe0LhUzyqfmF9//VBvXzTm/Du+PiYrsKb8VqAq05zccMi4+EJz8uMY+BQkDGSrF0k/p+Ep9efsvAvro8VfjazG4NPTlNgoa6EmN2EBwGqdTo1kD6h2NevFhC+0LUZ+WEN0yPx4PGypvWWjiNIh8fgfso6r0WwJ9JriZQjXnf7zeXr7YmzX+4crh/RuMzrZ43vU5LwLnYxFH4J4tpGmmtaLozJC+/jNQAaVt/jpRKB+QZOfBS+BGHMGvYarV0Q3kOWrUXcgzYHrhbA9s456IaOwhOxcK4UvwH3JZJzRTzvhjbuAcIHX2lcJOFDMlY/9yF88FAlfULItdm6NER4nNOsYe7XP3cXvsatz0c60BhbWrPtkSNO6JOtIbT/7kEhYyE2Xje9JcJDHLze1NkpribFg/5+ad0vDM2uEjRF1IVJMZOFxZOMmwbNItJGsOtaTF6O8PhztYappdmcqPAoK9YRq1mKEajZ7zMKH1uvBmO4UB8wNj0IbO5i3m6cjnE1KR4l/VmSFojYhdvkzaI6kbKN0ch5rPChTTCgFIkQ8dv5rvC4Abqedo5Xd4rwZHyovxV9C+/Kw+PHgDxIjU9L+KR/eJI3xC5skoeC3PnHCY8NCBE+NCz4xBWF5w6cXev8hdfg3ppc+hLeHXsa4cWvFhwsPCazxyZ7lPCclADGdgWwVE3010D5zKsSIzzJoSLabH5jaJxAzXuEGKTPKAR3vSfhNdirts9S79nr5IHIu8G9EUTjajA3yVnxy2MkAY82UdtcaWF818aYUhM9mk2WijREDkQNbjwHyMcJ78znaxaEl4D+8EjCa5hPU4TP+zjh+cMa6SvmHcmZ5tchrsZ31n+YiF8PPkZ4LAqbdbjwWLj0REwZE6jLFY8VHufTNQ4RnogkEhDevW9wpe5ReOce5sT11ns4kVea0hGazy0pbgN1ifcg/weQzOCopM/CZwZFFj4zKLLwmUGRhc8Miix8ZlBk4TMDYqf+Ai9LUpfoyWxdAAAAAElFTkSuQmCC" InformativeScreenshot="6ed58743639f4aef8b601f53ca5522a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMEA SMB for Robot | Leads | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="37, 313, 32, 32" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/auraIf/auraIf/recordsHighlightsIcon' tag='RECORDS-HIGHLIGHTS-ICON' /&gt;&lt;webctrl tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/auraIf/auraIf/recordsHighlightsIcon' tag='RECORDS-HIGHLIGHTS-ICON' /&gt;&lt;webctrl tag='IMG' type='' class='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAILSURBVFhH3ZjPSxtBFMf9h2pRsFIFxYv0or0VWjAqagX1UATJpdVDW/Acj/WgBymSQxURkeLv+gO0oS1CEFsQrJeKiKw0aOL7dl52qkv2rVk3Y1h98Llk3sz3w7LZmd0Sy7IQJsIt9Hd1BpmBF0BnFdD04HZRGZzFmU6HS6HUl2l5YhHgbJfQRf9zsbkYcLZLCC8fi81FQWW7haTGInJ/hSj6FFiIA0ufgNfPxB4/mBF62wykTnFZZylgsEPuzYMZoZ/ftclV0eGB3JsHM0IHv7SGo06O5N48mBFantAWjvqxKvfmwYwQk9wC0udAJg3aS8o9PjAnxLRVgBSIlMrjPjArZAD/QvEY8Oe3GWbH5AyFf6HeJ8C3ZX3HFlDJTaCvQc5Q+BfS0Ic39l/6pmUdg0bfi2s6ubFQls5q0NcFneSj+BHQUyevlUMwIQ2NvNOJ3kXxIXGuF4UJTQ3rWO+izx/FuV4EF4o8zD4EnUVbcyDe7Z3FPS1l8hoCwYW6anSiXbSmzuIczMyN6191RRvlNQQCC1GsV6cpmcQi0P7oary1HLQ+o0dV8b3mmHsdgYXA+xXXTgLoqHSPqytF2xt2z/6ue9yDYELdtXYQHzt475J6/rNrn5XoVb08nkMwIb4iK5P+NlHumVdHW/XsEsdzCCZ0i9wBobC9KIbuVTp0HxuYUH2OCQshE7LwD8GuDwW+roCpAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="954,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Which interaction are you looking for?" Title="Interaction input">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[Interaction]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Show filters'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7f6c6a2c-30bd-4d07-affb-7bc205c198de" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/o/Lead/list?filterName=00B5b00000503x1EAA" DesignTimeRectangle="1627, 307, 32, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Show filters'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewManagerButtonBar' tag='FORCE-LIST-VIEW-MANAGER-BUTTON-BAR' /&gt;&lt;webctrl aaname='Show filters' aria-role='button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewManagerButtonBar' tag='FORCE-LIST-VIEW-MANAGER-BUTTON-BAR' /&gt;&lt;webctrl aaname='Show filters' aria-role='button' tag='BUTTON' type='button' class='slds-button slds-button_icon slds-button_icon-border-filled slds-button_last' check:innerText='Show filters' /&gt;" Guid="69730d78-58a6-4b90-b8b0-09310aa4ea9f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVFhH7ZhPq0VAGIfvh1Z2ih0LCwtlwQfxDZQiPoAFtiKlWHhPv9Pc2/njcNyZzp1u89QvXmaapxGa+RrHkWSKfEJJkhCSpun1+KnkeU5VVVHXdfdCxECjTzJNE9V1TWVZ3kn9mdA3TdNcZ0oaIcwUHp80QgBjK6E9lNAR/0cIHzFN004lyzLW+zVcMxRF0ebAWwmCgNZ1ZT1fwyW0LAu5rrspcBvHcWieZ9ZrHy4hMAwDmaa5KYIYhkF937PWx3ALgbZtSdf1Jxlcw0/zDEKEAP5Bj0JFUbC77yNMCMRx/COD898gVAhYlkW2bbPqPMKF8EZ5nseq8yihI4QL+b5PYRiy6jzChXhRQkcooSOU0B7SLRSlWUpjZiDztNkAEUSa7ZjbQoZIJjTSBf9aV9hj4fPLAAAAAElFTkSuQmCC" InformativeScreenshot="fe1ff7d1fffb5c9aee313d867629abba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMEA SMB for Robot | Leads | Salesforce' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1596, 307, 32, 32" ElementType="Button" FriendlyName="'Show charts'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewManagerButtonBar' tag='FORCE-LIST-VIEW-MANAGER-BUTTON-BAR' /&gt;&lt;webctrl aria-role='button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/auraIf/auraIf/auraIf/forceListViewManagerHeader:header/forceListViewManagerButtonBar' tag='FORCE-LIST-VIEW-MANAGER-BUTTON-BAR' /&gt;&lt;webctrl aria-role='button' tag='BUTTON' type='button' class='slds-button slds-button_icon slds-button_icon-border-filled slds-button_first' aaname='Show charts' check:innerText='Show charts' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVFhH7ZhPywFRFIffD01SSEQpw1Z8A3ZSFnYWmJpmQUmRHRK7Kf/HeTunMd3Jda+68857F/PUr3SOmfPk3snM/DiOAzpFb6HdbgfT6RQsywLTNCMLO88X2m63VDgcDnC73SBKcO4LX2g2m8HxePTK0cIVwp/t8Xh45WjhCrHFqImFZMRCMv5MCK/U1WoFz+fTq3xHqELX6xU2mw19TiaTkEgkIJ/PQ6/Xg/v9TnUZoQmt12vIZrMkgKAMm3q9DufzmXoiQhEaDof+4FwuRzVW5pVGo0E9EcpC+/3eXx6MSKhSqUj3lLJQp9MJDOUJFYtFGI/H4Lou9UQoC5XL5cBwVgj3Ey4nbmjbtqHdblNPhLJQJpPhCo1GI7rqlsslGIZBvUKhQD0RykLVajUghFcagvdUzWYz0KvVatQToSzU7XYDQzGtVuuthun3+95Rn1EWwlvdVCrFFWCDS3s6nbyjPqMshEwmE64EG7wL/YZQhBAcmE6n30RKpRIsFgvvW3JCE0IulwvM53MYDAZ0DlzOf/1zDYNYSEYsJIMrpN2DonaP0tq9bMBo9TpGl2gm5MAvKFYYJ1lIOZkAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Last Interactionequals'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7f6c6a2c-30bd-4d07-affb-7bc205c198de" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/o/Lead/list?filterName=00B5b00000503x1EAA" DesignTimeRectangle="1379, 574, 252, 38" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Last Interactionequals'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/forceListViewManagerSecondaryDisplayManager:secondaryDisplayManager/forceFilterPanel:filter-panel/forceFilterPanelFilterCriterion:filterPanelFieldCriteria/auraIf/auraHtml:trigger' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/forceListViewManagerSecondaryDisplayManager:secondaryDisplayManager/forceFilterPanel:filter-panel/forceFilterPanelFilterCriterion:filterPanelFieldCriteria/auraIf/auraHtml:trigger' tag='A' type='' class='trigger' aaname='Last Interactionequals                              ' check:innerText='Last Interaction&amp;#xD;&amp;#xA;equals' /&gt;" Guid="9bc9ad77-866b-4204-8afd-23cd71e31f3c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQAAAAAqCAYAAABcMoWCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMWSURBVHhe7dndjeIwFIbhLYOCKCQFpJdIaYQL2sgFXSCq8Pr4Jzk2DgOzk+zAeR8pK2Ic26w4XxzmjwNgFgEAGEYAAIYRAIBhBABgGAEAGEYAAIapALi6c9+78zWdbuB67l2/5QT/SNZ3HC7pDPh8PxwAj8d4OgAuwz6FuNc8wC9FABAAMOyJALi44Xh0x3QsBazb5Tq5funXKiwdAPH1ZbmmP/sVeFKUxbihdzF2HjqOcY7rCI1ra/X0uDJXY54yoNY/z2WQNai5CBG8qRd3APKlH/y/dbFkj8eoA6Au8LmOijtzPWa5hmN6fW/p5zu6vtWv2gEs64vr0Z9Pij6fy+tlXpnnq/834Hd6KgBioaW7Xf6ypztoefN7LQB0gRXnRWGqO221hnoM0Vprq1+wGgB+zrwjySREUlvcAcRmUZ8D7+LLAAgFNX+77/vEu2Fu2yoA2nf51hitta4WKAEA474MAPlyz0UWttL3fZbC2SIAZMzqeT6px1hdq4z3w48ABAA+QRUAeescj/CFD4WU2vrBDanApVjmvupuObc3KkIXbF285Xne9ucwqR4D0nz1GL6hudb4Vmu95TztNaRDfR4CAJ9CBQAAawgAwDACADCMAAAMIwAAwwgAwDACADCMAAAMIwAAw/5rANxOnTuMUzoDsDcCADCMAAAMqwJgcuPh4A7h6NzplprF7eS6/F53cpMv3i51kELOrwPp6/vklmnMY8Zrc3sZAA/mBrAJFQA3d+oObq7HUPCjL0shxamKMoXBcwHgr10GDXPo62IAVHMD2MUSANNY3J1jUcaib23VddE/DoBSfV0eV3YJxRgANlcGwLwFXw6pz7sC914JgFDoasxWAPizsAvQ7wPYVhkAK3vwslAjfcd+FAD1tbpva1zfyuMAsBP1G0D8Ea5ZeOGZf/03gPLxId3J03m5tY/vPQ6A+hoAW1EB4KXCnrfr+jlePyL4dv1XgLnow/s+KCb9CFD+uj+OrR2Avt4f3P6BXZQB8AK9lQfwnggAwDACADDs2wEA4P0RAIBhBABgGAEAmOXcX4qK8NW61CihAAAAAElFTkSuQmCC" InformativeScreenshot="a32f5c27958860a83437ac46de36a3f2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMEA SMB for Robot | Leads | Salesforce' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1366, 533, 297, 28" ElementType="Text" FriendlyName="'Matching all'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='bodyTitle' aaname='Matching all of these filters' check:innerText='Matching all of these filters' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS0AAAAgCAYAAABHCi6EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQBSURBVHhe7ZlvjvIgEMbfw/U4vUsP01P4rSbeQBNvYOInluHvDAxs9XXXxTy/hFigwDDMPNb6zwAAwEBAtAAAQwHRAgAMBUQLADAUEC0AwFBAtAAAQwHRAgAMxXtF67qaeVrMFqqSzSzTZBa980e4rrOZwoL8+mHcviYzTbNZr6GtCe1zz30/gffx5Pws/b0tk5nfYxQAXZhoXc062wCeV3ul4YN6VyBvS2ceRle0fp9XiVY34as9v0+0ensUe9h7ngD8AoVozWa2wqXFsQtwiNYuKOGbQ/+YaLXOE6IF/iqVaK2rDdAq4yixFtsng5wCm4TMlRDUUdxiyVP5JzXRHhOYkiL2pQEymX0Sbf5p0N0rxY6v6+9rC4FmN/GIaIk5ki3haVWZ28H3aYv3ZdjnRr7Qx/G1uP+Fr5mtrXZObb/m76ucy5Y0nTs7Pj42k9/W4AffvsceAPZSi9Y1foZmiw/EzX3mpLFBniPYBWnqq76ZvWDxgLe64j5d4McOV49r10nE3xG5ehxXrOeTRO4h07Y77rO8LnF9fH/F+mRbYygN9kIdqs4e8kEaL30l7fD2umrl44BiCxc6Ds0tzlMRrVAp1pL38n5nb6MPgFegiJaWKLl9VwKUgUp1LYurBGZJ2UsiIq3Bx0Syzd/B7eb7lj7gFAnrkOs9LlpyvrzXui/ZW81DKL5o+d4izqxYqydatW9oLHuq4n2qnQA8jypaPAh50MsgDwFKTwmh9IKcj0soAZ0TvpNEBI1NoiUT23Z2RatlN084fi1hvmFwoeLXFTtEK/uL+rKdqeSFQlucz4tWdT//AmHIc+n4WxOtco0wVvVbZScAz9MQrRjQ8t0QD/IyOHmfGuRaFr9MtEqRqIUg0rOb9zVtVueWvnutaO1I9OTvvliX8L2XdnwnWuIsGG2/WYp5AHiGpmj55LLfjo1glSLihaMV5HGuFMu2nt9p/a9o0aVNlMLO1jutnt084XrJR3OI/RX7zXtQqPbcE62wVnOyAJuz9EUPvk5ph/CTep66f3t+43YC8Cxt0bKUyVcHOT3yU5nNsvA+LwbUl8a7gM33u1uVIM5r7hctwiV3mL//72Hbbp5w3eSz8PVKkSj9VhLH+nX7omVryZfRZj/MCknZFhC22dKypT7Plr+V8xTr29LyW8dOAJ6BidYnQQmIb3QAPpGPFC33pNF71AEADMtHiJb7ScJ/qux8pwMAGI8P/XkIAPhUIFoAgKGAaAEAhgKiBQAYCogWAGAoIFoAgKGAaAEAhgKiBQAYCogWAGAoIFoAgKEQonW/383lcjHH49EcDgcUFBSUtxXSIdIj0iVOEi3qOJ1O5nw+m9vtFloBAOA9kA6RHpEuZeEy5gvHsOsaz8fplAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NSelectItem DisplayName="Select Item '0 options selected'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[Interaction]" ScopeIdentifier="7f6c6a2c-30bd-4d07-affb-7bc205c198de" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="49">
+                  <x:String>CloudPlatform</x:String>
+                  <x:String>Content Syndication</x:String>
+                  <x:String>CPL</x:String>
+                  <x:String>CPL - G2Crowd</x:String>
+                  <x:String>CPL - iSource</x:String>
+                  <x:String>CPL - ITCS</x:String>
+                  <x:String>CPL - LinkedIn</x:String>
+                  <x:String>CPL - Machwan</x:String>
+                  <x:String>Employees Referrals</x:String>
+                  <x:String>Events</x:String>
+                  <x:String>Events - CoHosted</x:String>
+                  <x:String>Events - Sponsored</x:String>
+                  <x:String>Events - UiPath</x:String>
+                  <x:String>HS Form - old</x:String>
+                  <x:String>HS Forms - Blog-News</x:String>
+                  <x:String>HS Forms - Community</x:String>
+                  <x:String>HS Forms - Contact</x:String>
+                  <x:String>HS Forms - Partner</x:String>
+                  <x:String>HS Forms - Partners</x:String>
+                  <x:String>HS Forms - Trial</x:String>
+                  <x:String>HS Forms - Trial-Community</x:String>
+                  <x:String>HS Forms -WPs</x:String>
+                  <x:String>HS Forms - WPs</x:String>
+                  <x:String>HubSpot Forms</x:String>
+                  <x:String>Live Webinars</x:String>
+                  <x:String>On-Demand Webinars</x:String>
+                  <x:String>On-Premises</x:String>
+                  <x:String>Partners Referrals</x:String>
+                  <x:String>Platforms</x:String>
+                  <x:String>Platforms - Academy</x:String>
+                  <x:String>Platforms - Certifications</x:String>
+                  <x:String>Platforms - CloudRPA</x:String>
+                  <x:String>Platforms - Connect</x:String>
+                  <x:String>Platforms - Drift</x:String>
+                  <x:String>Platforms - Forum</x:String>
+                  <x:String>Platforms - Go!</x:String>
+                  <x:String>SFDC</x:String>
+                  <x:String>SFDC - D&amp;B</x:String>
+                  <x:String>SFDC - Demandbase</x:String>
+                  <x:String>SFDC - DiscoverOrg</x:String>
+                  <x:String>SFDC - Employees Referrals</x:String>
+                  <x:String>SFDC - Sales</x:String>
+                  <x:String>SFDC - SDR</x:String>
+                  <x:String>Telemarketing</x:String>
+                  <x:String>Third Party</x:String>
+                  <x:String>Unknown</x:String>
+                  <x:String>Webinars</x:String>
+                  <x:String>Website form</x:String>
+                  <x:String>Whitepapers</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/o/Lead/list?filterName=00B5b00000503x1EAA" DesignTimeRectangle="966, 649, 368, 30" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'0 options selected'" FullSelectorArgument="&lt;webctrl aria-role='button' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/forceListViewManagerSecondaryDisplayManager:secondaryDisplayManager/forceFilterPanel:filter-panel/forceFilterPanelFilterEditor/forceFilterPanelMultiPicklistCriterionEditor:filter-panel-criterion-editor/uiMenuTriggerLink:selectedPicklistOptionsLabel/auraHtml:link' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/forceListViewManagerSecondaryDisplayManager:secondaryDisplayManager/forceFilterPanel:filter-panel/forceFilterPanelFilterEditor/forceFilterPanelMultiPicklistCriterionEditor:filter-panel-criterion-editor/uiMenuTriggerLink:selectedPicklistOptionsLabel/auraHtml:link' tag='A' type='' class='uiButton--default uiButton--neutral uiButton picklistButton' aaname='0 options selected' check:innerText='0 options selected' /&gt;" Guid="cfa5ea6c-abe4-4d2e-801b-c2a6e1b11d80" InformativeScreenshot="a123578d8aef7f8709c1fd74617c0639.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EMEA SMB for Robot | Leads | Salesforce' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="966, 629, 368, 20" ElementType="Text" FriendlyName="'Value'" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/forceListViewManagerSecondaryDisplayManager:secondaryDisplayManager/forceFilterPanel:filter-panel/forceFilterPanelFilterEditor/forceFilterPanelMultiPicklistCriterionEditor:filter-panel-criterion-editor/auraHtml' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/navexSplitViewWrapper:splitViewWrapper/lafPageHost:pageHost/oneConsoleObjectHome/auraIf/forceListViewManager:listViewManager/forceListViewManagerSecondaryDisplayManager:secondaryDisplayManager/forceFilterPanel:filter-panel/forceFilterPanelFilterEditor/forceFilterPanelMultiPicklistCriterionEditor:filter-panel-criterion-editor/auraHtml' tag='DIV' type='' class='inputLabel forceFilterPanelMultiPicklistCriterionEditor' aaname='Value' check:innerText='Value' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXQAAAAYCAYAAADqIgbGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGySURBVHhe7di7jcJAFEbhLY4KXIEpAApwTk4RxPSByJBwRIZjQpBI7upHvrPX5qHlIa13dD5pBB6bCY+H+TIAQBYIOgBkgqADQCYIOgBkgqADQCYIOgBkgqADQCbeDvput7PpdGqHw6GdAQD8hRT0+Xxuy+WyvfqxXq+tqio7nU7tTBdBB4BhSEG/F26FXvfuIegAMAwp6AqywqxAuxhr7d5Ho9FljMfjFPD4jIZeCn5P+i8EXfs6t/4RAABe0zlD7x+76LvmtGtfLBZp9645DXkm6L6eaC09+2j3DwD4vU7QFefZbHaJ7aPgau7ZoGuu/w9AgWeXDgCf0Ql6jHiMu2jOj0o0Xgm6jmriGnEdAMB7OkEXPxaJu2cFWaGOcX8l6P17AIDPuQq6Al2WpU0mk3Q84pF3+n4r6P1jGn1qF+7X8XcAgM+6CrpHOe7IfS4ek9wKunjE43Me9P46RVGklwYA4D1XQQcA/E8EHQAyQdABIBMEHQAyQdABIBOdoJ/PZ2uaxjabja1WKwaDwWAMcKjRarWaHaWg60Zd17bf7+14PLazAIChUaPV6u12G6Ju9g3/DWbU9GDA1QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1696, 1026" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZZBSBRRGMdHYolFJCJEJEQkJERCPISHCAlP0qGT5w7RwUNIhESEiAfxGJ46ONIpwmOIiHiQiAiRiOgUb6JTePLQIUQ6TL//25ndt85jXGmc7eDht2/3zbfv+79vvu+9L4jjuKOdnAv4fwUEq+ZCsBp1wmW4BFXN+Wz/hYwAHMkxDs0I431YgHl+TzHe0LNmu6gfrkEfNl1BGJ1KZJOA2q7NAIs9hm8QNzB/GL/CDAzCTZiFDfgMb+ERjEKnu24exwREPfASHMcZDhDzjvHLsfmUXbgHen1d0JugaGWiUxfAw4ssTJjNId99C58GCXwA0/CCNcFG7jawyUYuuQKUbOvgW7AoDCzCdbAiXAEKP+H1/rFoXkG/T8DvxKAMnkHFFXAFlM0+4+IJ7evotQKUFPxQaX2oG5TD3USADf8y/EoelMWTgA8dPiqXI+dBWcxIAPUffXImy2RcAqokRDt2/wO/3Qgw3HJeg7PmKVTSV/AzmSwJ84axzxYAXyqgCvAYFo35zrgEw+m1nZbhMHysGRVIaHS3vMbxCuNzmASVfPNlpAm4hSHGBd0Hob3YuP2MDjj1GDpp865jexqqs5kAdUJSvAd+Bw32YQt2QD3Ce5gDdVRV15mPuoD6hKIRqv+jRGp3+kn9gRJqDIZATvU6vbv1kRHgwiLqZLSbbJXUzo5NGIeK7/+tkC+ATCWR1KjcAXU126BkXYOHoPd7YpjzyBWQghOVqsJ6FVF0vzaT1fO1FOY8WhJwlpwLaLOAuOMveA1Of+TuOKQAAAAASUVORK5CYII=" InformativeScreenshot="00e7568ba5c12381a7c3b2b28d4bb6ad.jpg" Selector="&lt;html app='chrome.exe' title='Home | Salesforce' /&gt;" Title="Home | Salesforce" Url="https://uipath.lightning.force.com/lightning/page/home" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
 </Activity>
